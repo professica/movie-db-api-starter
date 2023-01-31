@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta description="author" content="">
+	<title>JavaScript Third-Party APIs Activity</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1>Movie Info!</h1>
+		<p>Learn more about your favorite movies on our site.</p>
+	</header>
+	<main>
+		<article>
+			<h2>Current Popular Movies</h2>
+			<section id="popular"></section>
+		</article>
+		<article>
+			<h2>Popular the Year You Were Born</h2>
+			<form>
+				<label for="userYear">Enter Your Birth Year: </label>
+				<input type="number" name="userYear" id="userYear" min="1940" max="2021">
+				<button id="yearBtn">Submit</button>
+			</form>
+			<section id="birthYear"></section>
+		</article>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2021</p>
+		<p>This site is for educational purposes only</p>
+	</footer>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
