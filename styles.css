@@ -83,7 +83,7 @@ article{
 }
 
 article:first-of-type{
-	height: 1500px;
+	min-height: 1500px;
 }
 
 h2{
@@ -122,7 +122,7 @@ p span{
 figure{
 	display: block;
 	max-width: 400px;
-	margin: 0 auto;
+	margin: 1rem auto;
 }
 
 img{
@@ -135,8 +135,6 @@ figcaption{
 	font-weight: bold;
 	text-align: center;
 	padding: 0.5em;
-	text-decoration: underline;
-	text-decoration-color: #11b5df;
 }
 
 form{
