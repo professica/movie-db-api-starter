@@ -1,3 +1,5 @@
+// Function runs on page load to view current popular movies in the US
+// endpoint here: https://developer.themoviedb.org/reference/movie-popular-list
 function getPopularMovies(){
     // the endpoint
     // TO DO
@@ -21,6 +23,8 @@ function getPopularMovies(){
     // TO DO
 }
 
+// function runs only after a year is entered/chosen and submitted through the form
+// endpoint here: https://developer.themoviedb.org/reference/discover-movie
 function getBirthYearMovies(e){
     e.preventDefault();
 
