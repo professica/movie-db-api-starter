@@ -2,34 +2,52 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="author" content="">
 	<title>JavaScript Third-Party APIs Activity</title>
+	<meta name="author" content="">
+	<meta name="description" content="View current popular movies or movies by year on the Movie Info website!">
+
+	<!-- GOOGLE FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;0,800;1,800&display=swap" rel="stylesheet">
+
+	<!-- CUSTOM STYLESHEET -->
 	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<!-- CUSTOM SCRIPTS -->
+	<script defer src="script.js"></script>
 </head>
 <body>
 	<header>
-		<h1>Movie Info!</h1>
-		<p>Learn more about your favorite movies on our site.</p>
+		<div>
+			<h1>Movie Info!</h1>
+			<nav>
+				<h2 class="sr-only">Main Navigation</h2>
+				<ul>
+					<li><a href="#autoLoad">Popular</a></li>
+					<li><a href="#searchLoad">Search by Year</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 	<main>
-		<article>
+		<section id="autoLoad">
 			<h2>Current Popular Movies</h2>
-			<section id="popular"></section>
-		</article>
-		<article>
+			<div id="popular"></div>
+		</section>
+		<section id="searchLoad">
 			<h2>Popular the Year You Were Born</h2>
 			<form>
-				<label for="userYear">Enter Your Birth Year: </label>
-				<input type="number" name="userYear" id="userYear" min="1940" max="2023">
+				<label for="userYear">Enter Your Birth Year (required): </label>
+				<input type="number" name="userYear" id="userYear" min="1940" max="2024">
 				<button id="yearBtn">Submit</button>
 			</form>
-			<section id="birthYear"></section>
-		</article>
+			<div id="birthYear"></div>
+		</section>
 	</main>
 	<footer>
-		<p>Copyright &copy; 2023</p>
+		<p>Copyright &copy; 2024</p>
 		<p>This site is for educational purposes only</p>
 	</footer>
-	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
