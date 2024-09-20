@@ -160,9 +160,8 @@ h2{
 
 #popular{
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	gap: 1rem;
-	width: calc(98% - 2rem);
 }
 
 #featured{
@@ -217,6 +216,12 @@ button svg{
 	stroke: var(--white);
 	width: 2rem;
 	height: 2rem;
+}
+
+#birthYear{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 1rem;
 }
 
 .yrMovie{
