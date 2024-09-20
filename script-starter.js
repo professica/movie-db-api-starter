@@ -73,8 +73,9 @@ function getBirthYearMovies(e){
         /*
             // This code can be used for the display of the movies from the given year
             // It skips any movies that don't include a poster
-            // currently only displays the top three movies from that year but can be adjusted
-            for(let i = 0; i < 4; i++){
+            // currently only displays the top six movies from that year but can be adjusted
+            let counter = 0;
+            for(let i = 0; counter < 6; i++){
                 if(json.results[i].poster_path === null){
                     continue;
                 }else{
@@ -82,7 +83,9 @@ function getBirthYearMovies(e){
                         <img src="${"TO DO"}" alt="">
                         <h3>${"TO DO"}</h3>
                     </section>`; 
+                    counter++;
                 }
+            }
         */
         
         // set the response type
