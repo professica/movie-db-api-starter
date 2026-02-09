@@ -14,31 +14,58 @@ function getPopularMovies(){
 
     // attach event handlers
     // TO DO
-    /*
-        // This code can be used for the display of the featured movie
-        // (it is a string template)
-            `<section id="featured">
-                <h3>${"TO DO"}</h3>
-                <img src="${"TO DO"}" alt="">
-                <p>"${"TO DO"}"</p>
-            </section>`
 
+        // conditional to check the ready status of the call
+        // TO DO
 
-        // This code can be used for the display of the other popular movies (18 of them)
-        // (it is a string template)
-            `<section class="movie">
-                <img src="${"TO DO"}" alt="">
-                <div>
+            // date object for adding release dates
+            let date;
+            /*
+                // This code can be used for the display of the featured movie
+                // (it is a string template)
+                 html += `<section id="featured">
                     <h3>${"TO DO"}</h3>
-                    <p>${"TO DO"}
-                        <span class="vote">Vote Average: ${"TO DO"}</span>
-                    </p>
-                </div>
-            </section>`
+                    <img src="${"TO DO"}" alt="">
+                    <p>Released: ${"ADD MONTH"}-${"ADD DAY OF MONTH"}-${"ADD YEAR"}</p>
+                    <p>"${"TO DO"}"</p>
+                </section>`;
+
+                // loop through array of movies to add 18 more to the page after the featured movie
+                // TO DO
+
+                    // reassign the date object for current movie's date
+                    // TO DO
+        
+                    // This code can be used for the display of the other popular movies (18 of them)
+                    // (it is a string template)
+                    html += `<section class="movie">
+                        <img src="${"TO DO"}" alt="">
+                        <div>
+                            <h3>${"TO DO"}</h3>
+                            <p>Released: ${"ADD MONTH"}-${"ADD DAY OF MONTH"}-${"ADD YEAR"}</p>
+                            <p>${"TO DO"}
+                                <span class="vote">Vote Average: ${"TO DO"}</span>
+                            </p>
+                        </div>
+                    </section>`;
+
+            // close the output loop
+            // TO DO
+        
+            // add the html to the page
+            popularMovies.innerHTML = html;
+
+        // close the conditional that checks ready state
+        // TO DO
+
+    // close the event handler
+    // TO DO
+    
         
     */
     // set the response type
     // TO DO
+    
     // open the request
     // TO DO
 
@@ -70,23 +97,36 @@ function getBirthYearMovies(e){
         // attach event handlers
         // TO DO
 
-        /*
-            // This code can be used for the display of the movies from the given year
-            // It skips any movies that don't include a poster
-            // currently only displays the top six movies from that year but can be adjusted
-            let counter = 0;
-            for(let i = 0; counter < 6; i++){
-                if(json.results[i].poster_path === null){
-                    continue;
-                }else{
-                    `<section class="yrMovie">
-                        <img src="${"TO DO"}" alt="">
-                        <h3>${"TO DO"}</h3>
-                    </section>`; 
-                    counter++;
-                }
-            }
-        */
+            // check for ready state
+            // TO DO
+
+            /*
+                // This code can be used for the display of the movies from the given year
+                // It skips any movies that don't include a poster
+            
+                for(let i = 0; i < 12; i++){
+                    if(json.results[i].poster_path === null){
+                        continue;
+                    }else{
+                        // create/assign date object to store release date for movie
+                        let date;
+                    
+                        html += `<section class="yrMovie">
+                            <img src="${"TO DO"}" alt="">
+                            <h3>${"TO DO"}</h3>
+                            <p>Released: ${"ADD MONTH"}-${"ADD DAY OF MONTH"}-${"ADD YEAR"}</p>
+                        </section>`; 
+                    } // close else
+                } // close for loop
+            */
+                // add output to the page
+                // birthYearMovies.innerHTML = html;
+
+            // close ready state conditional
+            // TO DO
+
+        // close event handler
+        // TO DO
         
         // set the response type
         // TO DO
