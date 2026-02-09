@@ -237,6 +237,10 @@ button svg{
 	letter-spacing: 0;
 }
 
+.yrMovie p{
+	text-align: center;
+}
+
 img{
 	display: block;
 	width: 100%;
@@ -364,23 +368,21 @@ footer p{
 	#featured{
 		grid-column: 1/-1;
 		grid-template-columns: 1fr 2fr;
-		grid-template-rows: 1fr 1fr;
+		grid-template-rows: 1fr 0.5fr 2fr;
+		align-items: center;
 	}
 
 	#featured img{
-		grid-row: 1/-1;
+		grid-row: 1/4;
 	}
 
 	#featured h3{
 		grid-column: 2/-1;
-		grid-row: 1/2;
 		text-align: center;
-		margin-top: 25%;
 	}
 
 	#featured p{
 		grid-column: 2/3;
-		grid-row: 2/3;
 	}
 }
 
